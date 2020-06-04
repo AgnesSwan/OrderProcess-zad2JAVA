@@ -52,53 +52,28 @@ String decyzja2=input.next();
         for (String platnosc : platnoscLista) {
             System.out.println(platnosc);
         }
-        do {
+
             String rodzajPlatn = input.next();
 
-          switch (rodzajPlatn) {
+            switch (rodzajPlatn) {
                 case "Gotowka":
                     System.out.println("Pobrano gotowke");
                     break;
                 case "Przelew":
-                    Przelew przelew=new Przelew();
+                    Przelew przelew = new Przelew();
                     przelew.potwierdz();
                     break;
                 case "Karta kredytowa":
-                    KartaKredytowa karta=new KartaKredytowa();
+                    KartaKredytowa karta = new KartaKredytowa();
                     karta.pobierz();
                     karta.potwierdz();
                     break;
                 default:
                     System.out.println("Taka forma platnosci nie instnieje");
             }
-            System.out.println("Dodaj drugi rodzaj płatności? (Y/N)");
-            Scanner input2 = new Scanner(System.in);
-
-            String decyzja=input2.next();
-            if (decyzja.equals("N")||decyzja.equals("n")) break;
+klienci1.wyloguj();
         }
-        while (true); // ???????????????????????
-    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//ZAMÓWIENIE
-
-//KLIENT
 
 
 

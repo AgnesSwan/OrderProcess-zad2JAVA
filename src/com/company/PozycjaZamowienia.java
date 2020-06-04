@@ -15,19 +15,5 @@ public class PozycjaZamowienia {
     }
 
 
-    public Produkt getProdukt() {
-        return produkt;
-    }
 
-    public void setProdukt(Produkt produkt) {
-        this.produkt = produkt;
-    }
-
-    public int getIloscProduktu() {
-        return iloscProduktu;
-    }
-
-    public void setIloscProduktu(int iloscProduktu) {
-        this.iloscProduktu = iloscProduktu;
-    }
 }
